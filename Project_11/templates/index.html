@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Product Sales Forecasting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .chart-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seasonal Product Sales Forecasting</h1>
+    </header>
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>This project focuses on forecasting seasonal product sales using machine learning techniques, specifically Linear Regression and Random Forest models. The dataset from the Kaggle competition 'Store Sales - Time Series Forecasting' was utilized for model training and evaluation.</p>
+        
+        <h2>Raw Data</h2>
+        <div class="chart-container">
+           
+            <img src="rawdata.png" alt="Actual vs Predicted Sales">
+            
+        </div>
+
+        <h2>Model Performance Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Training Accuracy</th>
+                    <th>Testing Accuracy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linear Regression</td>
+                    <td>0.70</td>
+                    <td>0.50</td>
+                </tr>
+                <tr>
+                    <td>Random Forest</td>
+                    <td>1.00</td>
+                    <td>0.91</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Visualizations</h2>
+        <div class="chart-container">
+            <h3>Top 5 Category Sales</h3>
+            <img src="top5forecast.png" alt="Actual vs Predicted Sales" height="300px">
+          
+        </div>
+
+        <h2>Visualizations</h2>
+        <div class="chart-container">
+            <h3>Top 5 Store's Forecast Sales</h3>
+            <img src="top5categroy.png" alt="Actual vs Predicted Sales" height="300px">
+          
+        </div>
+
+        <h2>Interactive Data Exploration</h2>
+        <p>For a deeper analysis, interactive visualizations and data exploration can be conducted using the provided Jupyter notebooks and Python scripts.</p>
+    </div>
+</body>
+</html>
